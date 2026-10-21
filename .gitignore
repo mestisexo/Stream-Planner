@@ -1,8 +1,31 @@
-out/
-build/
-.vs/
-CMakeSettings.json
-CMakeUserSettings.json
-*.exe
-*.obj
-*.pdb
+# Builds / outputs
+/out/
+/build/
+/dist/
+/.vs/
+CMakeUserPresets.json
+*.user
+*.suo
+
+# Datos de usuario: nunca versionar bases de datos ni copias locales
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.bak
+*.migrated.bak
+%LOCALAPPDATA%/
+
+# Logs y temporales
+*.log
+*.tmp
+*.dmp
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Obsidian local
+**/.obsidian/
+.trash/
